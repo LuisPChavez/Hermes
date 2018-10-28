@@ -12,11 +12,10 @@ const userSchema = new Schema({
   LastName: { type: String, required: true },
   Age: String,
   Ethnicity: String,
-  Income: Number,
   PhoneNumber: Number,
+  Budget: String
   //Tags: [{ tagID: Number }],
   //ActivitiesDone: [{ actvity: {type: Schema.Types.ObjectId, ref: "Activity"} }],
-  Budget: String
 });
 
 mongoose.model("users", userSchema);
